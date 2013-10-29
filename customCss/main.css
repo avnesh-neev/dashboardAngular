@@ -1,0 +1,54 @@
+.virtLine
+{
+    border-left: 1px solid #180000;
+}
+
+.ulBullet
+{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.span2{width: 126px;}
+.glyphicon-calendar{width: 400px; height: 200px;}
+
+.ulBullet
+{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.leftcol{ float:left }
+.topMAr{margin-top: 5px;}
+
+.vr {
+    width: 10px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+}
+
+.glow {
+    text-shadow:-1px 0px 20px #0a008f;
+    color:white;
+}
+
+.dead {
+    text-shadow:-1px 0px 20px #575454;
+    color:white;
+}
+
+.btn-primary{background-color:#778554;}
+.btn-primary:hover{background-color: #E6E4D1;}
+.glyphicon-calendar{color: #778554;}
+
+#hrLine{
+    color: #6B8E23;
+    background-color: #6B8E23;
+    height: 2px;
+}
+
+.floatLeft{float: left;}

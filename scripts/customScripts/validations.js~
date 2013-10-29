@@ -1,0 +1,96 @@
+function validateForm()
+{
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+var email = document.getElementById('email');
+if( document.myForm.name.value == "" )
+{
+    alert( "Please Enter your name!");
+    document.myForm.name.focus();
+    return false;
+}
+
+if(/^([a­zA­Z ])+$/.test(document.myForm.name.value))
+{
+    alert('Name should be alphanumeric');
+    document.myForm.name.focus();
+    return false;
+}
+
+if((document.myForm.name.value).length>20)
+{
+    alert("Name should be <=20 character");
+    return false;
+}
+
+if( document.myForm.dob.value == "" )
+{
+    alert( "Please Enter your D.O.B.!");
+    document.myForm.dob.focus();
+    return false;
+}
+
+if (!filter.test(email.value))
+{
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+}
+
+if( document.myForm.userName.value == "" )
+{
+    alert( "Please enter your User Name!");
+    document.myForm.userName.focus();
+    return false;
+}
+
+if(/^([a­zA­Z0­9])+$/.test(document.myForm.userName.value))
+{
+    alert('User Name should be alphanumeric');
+    document.myForm.userName.focus();
+    return false;
+}
+
+if((document.myForm.userName.value).length>20)
+{
+    alert("User Name should be <=20 character");
+    return false;
+}
+
+if( document.myForm.pasword.value == "" )
+{
+    alert( "Please enter your password!");
+    document.myForm.pasword.focus();
+    return false;
+}
+
+if( document.myForm.repasword.value == "" )
+{
+    alert( "Please re-enter your password!");
+    document.myForm.repasword.focus();
+    return false;
+}
+
+if( document.myForm.pasword.value != document.myForm.repasword.value)
+{
+    alert( "your passwords do not match");
+    document.myForm.pasword.focus();
+    return false;
+}
+}
+
+
+function validateSignForm()
+{
+if( document.mySignForm.userName.value == "" )
+{
+    alert( "Please enter your User Name!");
+    document.mySignForm.userName.focus();
+    return false;
+}
+if( document.mySignForm.pasword.value == "" )
+{
+    alert( "Please enter your password!");
+    document.mySignForm.pasword.focus();
+    return false;
+}
+}
